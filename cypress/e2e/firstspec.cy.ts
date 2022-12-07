@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe("empty spec", () => {
+describe("Tests on CI/CD", () => {
   it("passes", () => {
     cy.visit("https://example.cypress.io");
     cy.url().should("contain", "example").and("contain", "cypress");
