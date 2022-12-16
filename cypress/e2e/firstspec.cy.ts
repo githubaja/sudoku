@@ -9,4 +9,8 @@ describe("Tests on CI/CD", () => {
     cy.visit("http://localhost:3000");
     cy.get("h1").should("have.text", "Sudoku");
   });
+  it("Should have 9 rows", () => {
+    cy.visit("http://localhost:3000");
+    cy.get("tbody tr").should("have.length", 9);
+  });
 });
